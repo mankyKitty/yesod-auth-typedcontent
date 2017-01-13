@@ -1,11 +1,17 @@
-## yesod-auth
+## yesod-auth-typedcontent
 
 This package provides a pluggable mechanism for allowing users to authenticate
-with your site. It comes with a number of common plugins, such as OpenID,
-BrowserID (a.k.a., Mozilla Persona), and email. Other packages are available
-from Hackage as well. If you've written such an add-on, please notify me so
-that it can be added to this description.
+with your site. It comes with a dummy plugin. Other packages are available
+from Hackage. 
 
-* [yesod-auth-account](http://hackage.haskell.org/package/yesod-auth-account): An account authentication plugin for Yesod
-* [yesod-auth-hashdb](http://www.stackage.org/package/yesod-auth-hashdb): The HashDB module previously packaged in yesod-auth, now with stronger, but compatible, security.
-* [yesod-auth-bcrypt](https://github.com/ollieh/yesod-auth-bcrypt/): An alternative to the HashDB module.
+This is a fork, err, sort of, of the
+primary [yesod-auth](https://hackage.haskell.org/package/yesod-auth) package.
+
+Created I was not satisfied that the only option for utilising the pluggable
+auth meant I was bound to using a purely HTML driven form and for some reason
+forced to be happy that a failed auth would return a 200.
+
+I'm still new to Yesod but these seemed like odd contraints that I could not
+find a way by config or custom functions to be able to alter.
+
+If this is madness then by all means let me know.
